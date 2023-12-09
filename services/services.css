@@ -1,0 +1,72 @@
+
+body{
+    margin-top: 70px;
+    background-color: #ffffff;
+}
+.top-head-ser {
+    margin: 0px auto;
+    padding-top: 20px;
+    margin-bottom: 3%;
+}
+.top-head-ser h1{
+    color: rgb(0, 38, 53);
+    font-size: 40px;
+    letter-spacing: 2px;
+    padding-top: 10px;
+}
+.top-head-ser h2{
+    color: rgb(0, 38, 53);
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+.top-head-ser p{
+    color: rgb(0, 114, 159);
+    font-size: 20px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+}
+.service-banner-app{
+    width: 100%;
+    height: 80vh;
+    background: url("/assets/Mobile-development.jpg") no-repeat center center/cover;
+}
+.service-banner-seo{
+    width: 100%;
+    height: 80vh;
+    background: url("/assets/SEO-1.jpg") no-repeat center center/cover;
+}
+.service-banner-web{
+    width: 100%;
+    height: 80vh;
+    background: url("/assets/Web-development.jpg") no-repeat center center/cover;
+}
+.service-banner-test{
+    width: 100%;
+    height: 80vh;
+    background: url("/assets/Software-testing.jpg") no-repeat center center/cover;
+}
+.service-banner-ui-ux{
+    width: 100%;
+    height: 80vh;
+    background: url("/assets/UIUX.jpg") no-repeat center center/cover;
+}
+
+.skill-item{
+    margin: 40px 0px;
+    box-shadow: none;
+    transition: all .3s;
+}
+
+.service-content{
+    margin-bottom: 30px;
+}
+.service-content h3{
+    color:rgb(0, 38, 53);
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+}
+.service-content p{
+    color: rgb(0, 114, 159);
+}

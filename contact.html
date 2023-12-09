@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="assets/favicon.png" >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AVingenious Technologies | Web Design & Development, Digital Marketing Company</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="loading-page">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <span style="font-size: 20px; color: aqua; font-weight: bolder; font-family: Kristen ITC;"> LOADING...</span>
+    </div>
+    <!-- Toggle Button -->
+    <button id="nightModeToggle">Night Mode (Beta)</button>
+           
+             <div id="main-content" style="display: none;">
+             </div>
+           
+    <div id="navi-bar"></div>
+  <!-- Rest of your page content -->
+  
+
+    <!-- /* Contact section */ -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="top-head" style="text-align: center;">
+                <h1>CONTACT US</h1>
+            </div>
+            <div class="ctnt">
+                <div class="contact-form">
+                    <center>
+
+                        <div class="section_login">
+                            <div class="container">
+                                <div class="row full-height justify-content-center">
+                                    <div class="col-12 text-center align-self-center py-5">
+                                        <div class="section_login pb-5 pt-5 pt-sm-2 text-center">
+                                            <h4 class="mb-0 pb-3">
+                                                <span style="margin-left: -200px;font-family: 'Cascadia Code SemiBold'; color: white; text-align: ;font-size: 3ch; font-weight: bold;" >Please fill the given form</span>
+                                            </h4>
+                                        
+                                            <!-- <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"> -->
+                                            <label for="reg-log"></label>   
+                                            <div class="card-3d-wrap mx-auto">
+                                                    <div class="card-front">
+                                                        <div class="center-wrap">
+                                                            <div class="section_login text-center">
+                                                                <h4 class="mb-4 pb-3"> <span style="color: white; text-align: right;">Contact Us</span></h4><br>
+                                                                <div class="form-group">
+                                                                    <input type="name" name="logname" class="form-style" placeholder="Your Name" id="logename" autocomplete="off" required>
+                                                                    <i class="input-icon uil uil-at"></i>
+                                                                </div>	
+                                                                <div class="form-group">
+                                                                    <input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off" required>
+                                                                    <i class="input-icon uil uil-at"></i>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="msg" name="logmsg" class="form-style" placeholder="Your Message" id="logmsg" autocomplete="off" required>
+                                                                    <i class="input-icon uil uil-at"></i>
+                                                                </div>
+                                                                
+                                                                <a href="#" class="btn_login mt-4" id="submitBtn" onclick="event.preventDefault(); togglePopupc()">Submit</a>
+
+                                                                <div class="popup-overlay" id="popupOverlayc" style="display: none;">
+                                                                <div class="popup-content">
+                                                                    <span class="close-btn" onclick="togglePopupc()">&times;</span>
+                                                                    <h2 class="popup-title">Congratulation</h2>
+                                                                    <p class="popup-text">We will contact you soon</p>
+                                                                    <p class="popup-text"> Stay Updated!</p>
+                                                                </div>
+                                                                </div>
+
+                                                                <script>
+                                                                function togglePopupc() {
+                                                                    var popupOverlay = document.getElementById('popupOverlayc');
+                                                                    popupOverlay.style.display = popupOverlay.style.display === 'none' ? 'flex' : 'none';
+                                                                }
+                                                                </script>
+                                                            </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="myctnt">
+                    <div class="details">
+                        <p style="text-align: right;">
+                            <a href="">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <b>Address:</b>
+                                Prayagraj 47, CY Chintamani Rd,<br>George Town, Prayagraj
+                                <br>PIN CODE: 211002
+                            </a>
+                        </p>
+                        <p>
+                            <a href="mailto:info@avingenious.com" target="_blank">
+                                <i class="fa-solid fa-envelope"></i>
+                                <b>Email:</b> info@avingenious.com
+                            </a>
+                        </p>
+                        <p>
+                            <a href="tel:7982237672" target="_blank">
+                                <i class="fa-solid fa-phone"></i>
+                                <b>Phone:</b> +91 -7982237672
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    
+    <div id="footer-sec"></div>
+    <script src="section.js"></script>
+</body>
+
+</html>

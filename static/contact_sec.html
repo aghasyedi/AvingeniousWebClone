@@ -1,0 +1,156 @@
+<section class="contact-section">
+    <div class="container">
+        <div class="top-head" style="text-align: center;">
+            <h1>CONTACT US</h1>
+        </div>
+        <div class="ctnt">
+            <div class="contact-form">
+                <center>
+
+                    <div class="section_login">
+                        <div class="container">
+                            <div class="row full-height justify-content-center">
+                                <div class="col-12 text-center align-self-center py-5">
+                                    <div class="section_login pb-5 pt-5 pt-sm-2 text-center" style="animation: fade-left 0.5s ease-in-out;">
+                                        <h4 class="mb-0 pb-3">
+                                            <span style="padding:70px; color: white;" >Contact Us</span>
+                                            <span style=" color:   white; ">Apply for Internship</span>
+                                        </h4>
+                                    
+                                        <input class="checkbox" type="checkbox" id="reg-log" name="reg-log">
+                                        <label for="reg-log"></label>   
+                                        <div class="card-3d-wrap mx-auto">
+                                            <div class="card-3d-wrapper">
+                                                <div class="card-front">
+                                                    <div class="center-wrap">
+                                                        <div class="section_login text-center">
+                                                            <h4 class="mb-4 pb-3"> <span style="color: white; text-align: right;">Contact Us</span></h4><br>
+                                                            <div class="form-group">
+                                                                <input type="name" name="logname" class="form-style" placeholder="Your Name" id="logename" autocomplete="off">
+                                                                <i class="input-icon uil uil-at"></i>
+                                                            </div>	
+                                                            <div class="form-group">
+                                                                <input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
+                                                                <i class="input-icon uil uil-at"></i>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="msg" name="logmsg" class="form-style" placeholder="Your Message" id="logmsg" autocomplete="off">
+                                                                <i class="input-icon uil uil-at"></i>
+                                                            </div>
+                                                            
+                                                            <a href="#" class="btn_login mt-4" id="submitBtn" onclick="event.preventDefault(); togglePopupc()">Submit</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-back">
+                                                    <div class="center-wrap">
+                                                        <div class="section_login text-center; ">
+                                                            <h4 class="mb-4 pb-3"><span style="color: white; text-align: right;">Apply for Internship</span></h4><br>
+                                                            <div class="form-group">
+                                                                <input type="text" name="logname" class="form-style" placeholder="Your Full Name" id="logname" autocomplete="off">
+                                                                <i class="input-icon uil uil-user"></i>
+                                                            </div>	
+                                                            <div class="form-group mt-2">
+                                                                <input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
+                                                                <i class="input-icon uil uil-at"></i>
+                                                            </div>	
+                                                            <div class="form-group mt-2">
+                                                                <input type="number" name="logwhnu" class="form-style" placeholder="Your WhatsApp Number" id="logwhnu" autocomplete="off">
+                                                                <i class="input-icon uil uil-lock-alt"></i>
+                                                            </div>
+                                                            <div class="form-group mt-2">
+                                                                <input type="text" name="logdeg" class="form-style" placeholder="Your Degree" id="logpass" autocomplete="off">
+                                                                <i class="input-icon uil uil-lock-alt"></i>
+                                                            </div>
+                                                            <div class="form-group mt-2">
+                                                                <select name="course" id="select" required style=" padding-left: 55px; border: none" class="form-style">
+                                                                    <option value="select">Select Internship Program</option>
+                                                                    <option value="python">Web Development Basic</option>
+                                                                    <option value="Java">Full-stack Web Development</option>
+                                                                    <option value="C_C_plus">App Development</option>
+                                                                    <option value="PHP-with-MySQL">Digital Marketing</option>
+                                                                    <option value="C-hex">Data Analytics</option>
+                                                                    <option value="frontend">Machine Learning</option>
+                                                                </select>
+                                                                
+                                                                <i class="input-icon uil uil-lock-alt"></i>
+                                                            </div>
+                                                            <div class="form-style-upload">
+                                                                <label for="resume">Upload resume:</label>
+                                                                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"></div>
+                                                            <script>
+                                                                function handleFileUpload(files) {
+                                                                    // Handle file upload logic here
+                                                                    console.log(files);
+                                                                }
+                                                            </script>
+                                                            
+
+
+
+
+
+                                                            <!-- <a href="#" class="btn_login mt-4">submit</a> -->
+
+
+
+
+
+
+                                                            <a href="#" class="btn_login mt-4" id="submitBtn" onclick="event.preventDefault(); togglePopup()">Submit</a>
+
+                                                            <div class="popup-overlay" id="popupOverlay" style="display: none;">
+                                                            <div class="popup-content">
+                                                                <span class="close-btn" onclick="togglePopup()">&times;</span>
+                                                                <h2 class="popup-title">Congratulation</h2>
+                                                                <p class="popup-text">Thanks for applying for internship, please check your email</p>
+                                                            </div>
+                                                            </div>
+
+                                                            <script>
+                                                            function togglePopup() {
+                                                                var popupOverlay = document.getElementById('popupOverlay');
+                                                                popupOverlay.style.display = popupOverlay.style.display === 'none' ? 'flex' : 'none';
+                                                            }
+                                                            </script>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="myctnt" style="animation: fade-right 0.5s ease-in-out">
+                <div class="details">
+                    <p style="text-align: right;">
+                        <a href="">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <b>Address:</b>
+                            Prayagraj 47, CY Chintamani Rd,<br>George Town, Prayagraj
+                            <br>PIN CODE: 211002
+                        </a>
+                    </p>
+                    <p>
+                        <a href="mailto:info@avingenious.com" target="_blank">
+                            <i class="fa-solid fa-envelope"></i>
+                            <b>Email:</b> info@avingenious.com
+                        </a>
+                    </p>
+                    <p>
+                        <a href="tel:7982237672" target="_blank">
+                            <i class="fa-solid fa-phone"></i>
+                            <b>Phone:</b> +91 -7982237672
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</section>

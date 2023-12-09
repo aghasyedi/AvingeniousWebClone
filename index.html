@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AVingenious Technologies | Web Design & Development, Digital Marketing Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    
+    <div class="loading-page">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <span style="font-size: 20px; color: aqua; font-weight: bolder; font-family: Kristen ITC;"> LOADING...</span>
+    </div>
+    <button id="nightModeToggle">Night Mode (Beta)</button>
+    
+      <div id="main-content" style="display: none;">
+      </div>
+    <div id="navi-bar"></div>
+    <sec_pagetion>
+        <h2 id="text"><span style="font-size: small;">DEVELOP YOUR INNOVATIVE SOLUTIONS</span><br>AVingenious</h2>
+        
+        <img src="assets/index/phone.png" id="phone">
+        <img src="assets/index/phone2.png" id="phone2">
+        <img src="assets/index/wavy.png" id="wavy">
+        
+        <a href="#down_index" class="smooth-scroll" id="btn_page">Explore</a>
+        
+        <img src="assets/index/michigama.png" id="michigama">
+        <img src="assets/index/footimg.png" id="footimg">
+    </sec_pagetion>
+    
+    <div class="sec_page"></div>
+
+    
+    
+    <script>
+        
+        let text = document.getElementById('text');
+        let phone = document.getElementById('phone');
+        let phone2 = document.getElementById('phone2');
+        let btn = document.getElementById('btn');
+        let michigama = document.getElementById('michigama');
+        let wavy = document.getElementById('wavy');
+        let footimg = document.getElementById('footimg');
+        let header_page = document.getElementById('header_page');
+        
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            
+            text.style.top = 50 + value * -.1 + '%';
+            phone2.style.top = value * -1.5 + 'px';
+            phone2.style.left = value * 2 + 'px';
+            phone.style.top = value * -1.5 + 'px';
+            phone.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            michigama.style.top = value * -.12 + 'px';
+            wavy.style.top = value * .25 + 'px';
+            header_page.style.top = value * .5 + 'px';
+        })
+        
+  // Smooth scroll function
+  function smoothScroll(target, duration) {
+    var targetElement = document.querySelector(target);
+    var targetPosition = targetElement.offsetTop;
+    var startPosition = window.pageYOffset;
+    var distance = targetPosition - startPosition;
+    var startTime = null;
+  
+    function animation(currentTime) {
+      if (startTime === null) startTime = currentTime;
+      var timeElapsed = currentTime - startTime;
+      var scrollAmount = ease(timeElapsed, startPosition, distance, duration);
+      window.scrollTo(0, scrollAmount);
+  
+      if (timeElapsed < duration) {
+        requestAnimationFrame(animation);
+      }
+    }
+  
+    // Easing function
+    function ease(t, b, c, d) {
+      t /= d / 2;
+      if (t < 1) return c / 2 * t * t + b;
+      t--;
+      return -c / 2 * (t * (t - 2) - 1) + b;
+    }
+  
+    requestAnimationFrame(animation);
+  }
+  
+  // Smooth scroll event listener
+  var scrollLinks = document.querySelectorAll('.smooth-scroll');
+  scrollLinks.forEach(function(link) {
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
+      var target = this.getAttribute('href');
+      var duration = 1000; // Adjust the duration as desired
+      smoothScroll(target, duration);
+    });
+  });
+    </script>
+    <section id="down_index">
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="assets/b-1.avif" style=" height: 90vh;">
+            <div class="text">
+                <h2>DESIGN YOUR <br><span>DIGITAL LANDSCAPE</span></h2>
+                <p>We help brand stand out from the crowd and make it succeed with our innovative ideas into reality.
+                </p>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="assets/b-2.avif" style=" height: 90vh;">
+            <div class="text">
+                <h2>DEVELOP YOUR <br><span>INNOVATIVE SOLUTIONS</span></h2>
+                <p>From design and development to deployment of custom software solutions, we’re here to help you win.
+                </p>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="assets/b-3.avif" style=" height: 90vh;">
+            <div class="text">
+                <h2>REINVENT YOUR <br><span>MOBILE EXPERIENCE</span></h2>
+                <p>From combining the UI/UI Design and engineering we partner with businesses and startups to deliver
+                    the best results.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- WHO WE ARE -->
+    <section class="container">
+        <div class="top-head" style="text-align: center;">
+            <h1 style="color:rgb(0, 38, 53)">WHO WE ARE</h1>
+            <p style="color: rgb(2, 87, 120);;">We are experienced technologists that apply our passion for technology to form successful products and
+                solutions. Our passion drives us to be innovative, imaginative, and experts. We help our clients across
+                the globe to gain sustainable competitive edge through the adoption of Innovation through Technology.
+            </p>
+        </div>
+        <div class="grid" >
+            <div class="box-side">
+                <div class="box box-1 reveal fade-left">
+                    <h3>CREATIVITY</h3>
+                    <p>Creativity helps to explore new things, imagine new possibilities, and pursue goals.</p>
+                </div>
+                <div class="box box-2 reveal fade-top">
+                    <h3>FLEXIBILITY</h3>
+                    <p>Support business progression that influences the organization’s changes.</p>
+                </div>
+                <div class="box box-3 reveal fade-right">
+                    <h3>DESIGN FREEDOM</h3>
+                    <p>Our business model is to select a design that matches your desired level of needs.</p>
+                </div>
+                <div class="box box-4 reveal fade-left">
+                    <h3>SIMPLICITY</h3>
+                    <p>It can be achieved by staying focused on specific goals and cutting out unnecessary practices.
+                    </p>
+                </div>
+                <div class="box box-5 reveal fade-bottom">
+                    <h3>ELITE SUPPORT</h3>
+                    <p>Service and integrity are our core values that are essential support of a business.</p>
+                </div>
+                <div class="box box-6 reveal fade-right">
+                    <h3>CUSTOMIZATION</h3>
+                    <p>Develop user experience because it permits users to control what they see.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WE ARE EXPERIENCED OUR SKILLS -->
+    <section class="skill">
+        <div class="container">
+            <div class="top-head">
+                <h2 style="color: black;">WE ARE EXPERIENCED</h2>
+                <h1 style="color: black;">OUR SKILLS</h1>
+            </div>
+            <div class="grid">
+                <div class="skill-left-side">
+                    <p class="reveal fade-left">There is no magical unicorn of marketing. It takes a sound strategy, a great plan and a team of
+                        experts like AVingenious on your side. We have been creating tremendous websites and helping our
+                        clients achieve their business goals.<br>
+                        Our team of web designers, web developers, software testers, search engine optimizer and social
+                        media marketers work together to achieve strategic priorities.</p>
+                    <br>
+                    <p class="reveal fade-left">Trustworthiness, productivity, and proficiency are the core principles of our QA services. We pay
+                        attention to the privacy and security of our customer data storage.<br></p>
+                    <p class="reveal fade-left">By partnering with us, you gain a trusted advisor having extensive knowledge. We accelerate your
+                        decision-making process and help associate your digital investments with the results you need to
+                        convey.</p>
+                    <br>
+                    <p class="reveal fade-left">Do you need your website to be remembered by potential customers? Valuable and engaging content
+                        will distinguish you from competitors. If you haven’t had the time yet or simply aren’t sure
+                        what approach creating social media profiles for your business, we can help!</p>
+                </div>
+                <div class="skill-items">
+                    <div class="skill-item skill-item-1 reveal fade-right">
+                        <span>70%</span>
+                        Software Testing
+                    </div>
+                    <div class="skill-item skill-item-2 reveal fade-right">
+                        <span>80%</span>
+                        UI/UX Design
+                    </div>
+                    <div class="skill-item skill-item-3 reveal fade-right">
+                        <span>90%</span>
+                        Web Development
+                    </div>
+                    <div class="skill-item skill-item-4 reveal fade-right">
+                        <span>95%</span>
+                        Digital Marketing
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR WORK PROCESS -->
+    <section class="work-section ">
+        <div class="work ">
+            <div class="top-head" style="text-align: center;">
+                <h1>OUR WORK PROCESS</h1>
+            </div>
+            <div class="grid ">
+                <div class="work-item work-item-1 reveal fade-left ">
+                    <div class="work-icon work-icon-1"><i class="fa-solid fa-clipboard-list"></i></div>
+                    <h3 class="work-h-1 ">01. PLANNING & STRATEGY</h3>
+                    <p>Planning is defined as the analysis of project feasibility, goals, and their strategy about the
+                        project.</p>
+                </div>
+                <div class="work-item work-item-1 reveal fade-bottom-left">
+                    <div class="work-icon work-icon-2"><i class="fa-solid fa-layer-group"></i></div>
+                    <h3 class="work-h-2">02. DESIGN & DEVELOP</h3>
+                    <p>The creation of actual conceptualization of the solution, converting into by writing a code into
+                        actual software.</p>
+                </div>
+                <div class="work-item work-item-1 reveal fade-bottom-right">
+                    <div class="work-icon work-icon-3"><i class="fa-regular fa-life-ring"></i></div>
+                    <h3 class="work-h-3">03. SUPPORT</h3>
+                    <p>Once the software passes through all stages without any issues, it requires maintenance and
+                        support systems.</p>
+                </div>
+                <div class="work-item work-item-1 reveal fade-right">
+                    <div class="work-icon work-icon-4"><i class="fa-regular fa-file-lines"></i></div>
+                    <h3 class="work-h-4">04. TEST & DELIVER</h3>
+                    <p>To access the software for errors and document bugs, if any, and then deploy or deliver the
+                        software.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR SERVICES -->
+    <section class="service-section">
+        <div class="container">
+            <div class="top-head" style="text-align: center;">
+                <h1 style="color:rgb(0, 38, 53)">OUR SERVICES</h1>
+            </div>
+            <div class="grid" style="justify-content: center;">
+                <div class="service-item reveal fade-left">
+                    <div class="service-icon"><i class="fa-brands fa-searchengin"></i></div>
+                    <h3>SEO</h3>
+                    <div class="spotlight-hover"></div> <!-- Add the spotlight-hover element here -->
+                </div>
+                <div class="service-item reveal fade-top">
+                    <div class="service-icon"><i class="fa-regular fa-pen-to-square"></i></div>
+                    <h3>UI/UX DESIGN</h3>
+                </div>
+                <div class="service-item reveal fade-right">
+                    <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>WEB DEVELOPMENT</h3>
+                </div>
+                <div class="service-item  reveal fade-left">
+                    <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <h3>APP DEVELOPMENT</h3>
+                </div>
+                <div class="service-item reveal fade-bottom">
+                    <div class="service-icon"><i class="fa-solid fa-lock"></i></div>
+                    <h3>SOFTWARE TESTING</h3>
+                </div>
+                <div class="service-item reveal fade-right">
+                    <div class="service-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                    <h3>DIGITAL MARKETING</h3>
+                </div>
+            </div>
+    </section>
+
+    <!-- WE ARE EXPERIENCED OUR SKILLS -->
+    <section class="skill">
+        <div class="container">
+            <div class="intern-grid">
+                <div class="intern-content">
+                    <h3 class="reveal fade-left">EXCITED TO WORK WITH US !</h3>
+                    <h1 class="reveal fade-left">OUR INTERNSHIP <br> PROGRAM</h1>
+                    <p class="reveal fade-left">We are always open to help you to take the next step in your career! Apply for the Internship &
+                        Grow With Us!</p>
+                    <a href="internship.html" class="intern-link reveal ">APPLY NOW</a>
+                </div>
+                <div class="skill-items">
+                    <img src="assets/intern.png" width="500px" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT US -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="top-head" style="text-align: center;">
+                <h1>CONTACT US</h1>
+            </div>
+            <div class="ctnt">
+                <div class="contact-form">
+                    <center>
+    
+                        <div class="section_login">
+                            <div class="container">
+                                <div class="row full-height justify-content-center">
+                                    <div class="col-12 text-center align-self-center py-5">
+                                        <div class="section_login pb-5 pt-5 pt-sm-2 text-center">
+                                            <h4 class="mb-0 pb-3">
+                                                <span style="padding:70px; color: white;" >Contact Us</span>
+                                                <span style=" color:   white; ">Apply for Internship</span>
+                                            </h4>
+                                        
+                                            <input class="checkbox" type="checkbox" id="reg-log" name="reg-log">
+                                            <label for="reg-log"></label>
+                                            <div class="card-3d-wrap mx-auto">
+                                                <div class="card-3d-wrapper">
+                                                    <div class="card-front">
+                                                        <div class="center-wrap">
+                                                            <div class="section_login text-center">
+                                                                <h4 class="mb-4 pb-3"> <span style="color: white; text-align: right;">Contact Us</span></h4><br>
+                                                                <div class="form-group">
+                                                                    <input type="name" name="logname" class="form-style" placeholder="Your Name" id="logename" autocomplete="off">
+                                                                    <i class="input-icon uil uil-at"></i>
+                                                                </div>	
+                                                                <div class="form-group">
+                                                                    <input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
+                                                                    <i class="input-icon uil uil-at"></i>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="msg" name="logmsg" class="form-style" placeholder="Your Message" id="logmsg" autocomplete="off">
+                                                                    <i class="input-icon uil uil-at"></i>
+                                                                </div>
+                                                                
+                                                                <a href="#" class="btn_login mt-4" id="submitBtn" onclick="event.preventDefault(); togglePopupc()">Submit</a>
+    
+                                                                <div class="popup-overlay" id="popupOverlayc" style="display: none;">
+                                                                <div class="popup-content">
+                                                                    <span class="close-btn" onclick="togglePopupc()">&times;</span>
+                                                                    <h2 class="popup-title">Congratulation</h2>
+                                                                    <p class="popup-text">We will contact you soon</p>
+                                                                    <p class="popup-text"> Stay Updated!</p>
+                                                                </div>
+                                                                </div>
+    
+                                                                <script>
+                                                                function togglePopupc() {
+                                                                    var popupOverlay = document.getElementById('popupOverlayc');
+                                                                    popupOverlay.style.display = popupOverlay.style.display === 'none' ? 'flex' : 'none';
+                                                                }
+                                                                </script>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-back">
+                                                        <div class="center-wrap">
+                                                            <div class="section_login text-center; ">
+                                                                <h4 class="mb-4 pb-3 contact-head">Apply for Internship</h4><br>
+                                                                <div class="form-group">
+                                                                    <input type="text" name="logname" class="form-style" placeholder="Your Full Name" id="logname" autocomplete="off">
+                                                                    <i class="input-icon uil uil-user"></i>
+                                                                </div>	
+                                                                <div class="form-group mt-2">
+                                                                    <input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
+                                                                    <i class="input-icon uil uil-at"></i>
+                                                                </div>	
+                                                                <div class="form-group mt-2">
+                                                                    <input type="number" name="logwhnu" class="form-style" placeholder="Your WhatsApp Number" id="logwhnu" autocomplete="off">
+                                                                    <i class="input-icon uil uil-lock-alt"></i>
+                                                                </div>
+                                                                <div class="form-group mt-2">
+                                                                    <input type="text" name="logdeg" class="form-style" placeholder="Your Degree" id="logpass" autocomplete="off">
+                                                                    <i class="input-icon uil uil-lock-alt"></i>
+                                                                </div>
+                                                                <div class="form-group mt-2">
+                                                                    <select name="course" id="select" required style=" padding-left: 55px; border: none" class="form-style">
+                                                                        <option value="select">Select Internship Program</option>
+                                                                        <option value="python">Web Development Basic</option>
+                                                                        <option value="Java">Full-stack Web Development</option>
+                                                                        <option value="C_C_plus">App Development</option>
+                                                                        <option value="PHP-with-MySQL">Digital Marketing</option>
+                                                                        <option value="C-hex">Data Analytics</option>
+                                                                        <option value="frontend">Machine Learning</option>
+                                                                    </select>
+                                                                    
+                                                                    <i class="input-icon uil uil-lock-alt"></i>
+                                                                </div>
+                                                                <div class="form-style-upload">
+                                                                    <label for="resume">Upload resume:</label>
+                                                                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"></div>
+                                                                <script>
+                                                                    function handleFileUpload(files) {
+                                                                        // Handle file upload logic here
+                                                                        console.log(files);
+                                                                    }
+                                                                </script>
+                                                                
+    
+    
+    
+    
+    
+                                                                <!-- <a href="#" class="btn_login mt-4">submit</a> -->
+    
+    
+    
+    
+    
+    
+                                                                <a href="#" class="btn_login mt-4" id="submitBtn" onclick="event.preventDefault(); togglePopup();">Submit</a>
+    
+                                                                <div class="popup-overlay" id="popupOverlay" style="display: none;">
+                                                                <div class="popup-content">
+                                                                    <span class="close-btn" onclick="togglePopup()">&times;</span>
+                                                                    <h2 class="popup-title">Congratulation</h2>
+                                                                    <p class="popup-text">Thanks for applying for internship, please check your email</p>
+                                                                </div>
+                                                                </div>
+    
+                                                                <script>
+                                                                function togglePopup() {
+                                                                    var popupOverlay = document.getElementById('popupOverlay');
+                                                                    popupOverlay.style.display = popupOverlay.style.display === 'none' ? 'flex' : 'none';
+                                                                }
+                                                                </script>
+    
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="myctnt">
+                    <div class="details">
+                        <p style="text-align: right; animation: fade-right 0.5s ease-in-out;">
+                            <a href="">
+                                <i class="fa-solid fa-location-dot" style="animation: fade-left 0.5s ease-in-out;"></i>
+                                <b>Address:</b>
+                                Prayagraj 47, CY Chintamani Rd,<br>George Town, Prayagraj
+                                <br>PIN CODE: 211002
+                            </a>
+                        </p>
+                        <p style="animation: fade-right 0.5s ease-in-out;">
+                            <a href="mailto:info@avingenious.com" target="_blank">
+                                <i class="fa-solid fa-envelope" style="animation: fade-left 0.5s ease-in-out;"></i>
+                                <b>Email:</b> info@avingenious.com
+                            </a>
+                        </p>
+                        <p style="animation: fade-right 0.5s ease-in-out;">
+                            <a href="tel:7982237672" target="_blank">
+                                <i class="fa-solid fa-phone" style="animation: fade-left 0.5s ease-in-out;"></i>
+                                <b>Phone:</b> +91 -7982237672
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <!-- <section class="newl-section">
+        <div class="newsl">
+            <div class="nws-content">
+                <h1>NEWSLETTER</h1>
+                <p>Subscribe to our newsletter and stay up to date with all events coming straight in your mailbox:</p>
+            </div>
+            <form action="">
+                <input type="email" id="email" placeholder="Email Address" required>
+                <button id="btn">Submit</button>
+            </form>
+        </div>
+    </section> -->
+
+    
+    
+
+    <!-- Footer Section -->
+    <div id="footer-sec"></div>
+    
+
+    <script src="main.js"></script>
+    <script src="section.js"></script>
+    
+    
+</body>
+
+</html>
